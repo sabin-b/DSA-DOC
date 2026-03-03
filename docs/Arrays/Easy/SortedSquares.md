@@ -1,6 +1,6 @@
 # Sorted Squares
 
-[LeetCode - Sorted Squares](https://leetcode.com/problems/squares-of-a-sorted-array/submissions/1934638103/ "Sorted Squares")
+[Problem Link](https://leetcode.com/problems/squares-of-a-sorted-array/submissions/1934638103/){:target="_blank" rel="noopener noreferrer"}
 
 ### Description
 
@@ -11,7 +11,6 @@ Given an integer array `nums` sorted in non-decreasing order, return an array of
 - Time Complexity: O(n)
 - Space Complexity: O(n)
 
----
 
 ```typescript
 function sortedSquares(nums: number[]): number[] {
