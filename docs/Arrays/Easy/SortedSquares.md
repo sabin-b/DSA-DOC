@@ -1,16 +1,28 @@
 # Sorted Squares
 
-[Problem Link](https://leetcode.com/problems/squares-of-a-sorted-array/submissions/1934638103/){:target="_blank" rel="noopener noreferrer"}
+[Problem Link](https://leetcode.com/problems/squares-of-a-sorted-array/submissions/1934638103/){:target="\_blank" rel="noopener noreferrer"}
 
 ### Description
 
 Given an integer array `nums` sorted in non-decreasing order, return an array of the squares of each number sorted in non-decreasing order.
 
-### Time Complexity & Space Complexity
+!!! example "Test Cases"
 
-- Time Complexity: O(n)
-- Space Complexity: O(n)
+    **Example 1:**
+    Input: nums = [-4,-1,0,3,10]
+    Output: [0,1,9,16,100]
+    Explanation: After squaring, the array becomes [16,1,0,9,100]. After sorting, it becomes [0,1,9,16,100].
 
+    **Example 2:**
+    Input: nums = [-7,-3,2,3,11]
+    Output: [4,9,9,49,121]
+
+### Approach 1: Two Pointers
+
+- **Time Complexity:** O(n)
+- **Space Complexity:** O(n)
+
+This approach uses a two-pointer technique to build the result array from largest to smallest. We compare the absolute values of the elements at the `left` and `right` pointers. The larger square is placed at the end of the `result` array, and the corresponding pointer is moved inward.
 
 ```typescript
 function sortedSquares(nums: number[]): number[] {
@@ -35,5 +47,6 @@ function sortedSquares(nums: number[]): number[] {
   return result;
 }
 
-console.log(sortedSquares([-4, -1, 0, 3, 10]));
+console.log(sortedSquares([-4, -1, 0, 3, 10])); // [0, 1, 9, 16, 100]
+console.log(sortedSquares([-7, -3, 2, 3, 11])); // [4, 9, 9, 49, 121]
 ```

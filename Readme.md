@@ -1,7 +1,7 @@
 prompt:
 
 ## documentation
-"Please create a new file for the 'Two Sum' problem under docs/Arrays/Easy. Here is the solution code and complexity analysis..."
+"Please create a new file for this  problem under docs/Arrays/Easy. Here is the solution code and complexity analysis..."
 
 
 ## github
