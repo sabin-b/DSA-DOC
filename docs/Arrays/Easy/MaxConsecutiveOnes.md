@@ -52,5 +52,3 @@ console.log(findMaxConsecutiveOnes([1, 1, 0, 1, 1, 1])); // 3
 // Example 2
 console.log(findMaxConsecutiveOnes([1, 0, 1, 1, 0, 1])); // 2
 ```
-
-This file is now ready and follows the same high-quality, consistent format as the rest of your documentation. Once you've created it, I can assist with the `git` commands if you need them.

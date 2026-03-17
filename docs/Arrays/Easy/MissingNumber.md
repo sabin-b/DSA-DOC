@@ -37,13 +37,13 @@ function missingNumber(nums: number[]): number {
   let n = nums.length;
   // Calculate the expected sum of numbers from 0 to n
   let expectedSum = (n * (n + 1)) / 2;
-  
+
   // Calculate the actual sum of the numbers in the array
   let actualSum = 0;
   for (let i = 0; i < n; i++) {
     actualSum += nums[i];
   }
-  
+
   // The difference is the missing number
   return expectedSum - actualSum;
 }
@@ -76,6 +76,7 @@ console.log(missingNumberXOR([9, 6, 4, 2, 3, 5, 7, 0, 1])); // 8
 ```
 
 This file is now ready to be added to your collection. Let me know if you need the `git` commands to commit it.
+
 # Missing Number
 
 [Problem Link](https://leetcode.com/problems/missing-number/)
@@ -115,13 +116,13 @@ function missingNumber(nums: number[]): number {
   let n = nums.length;
   // Calculate the expected sum of numbers from 0 to n
   let expectedSum = (n * (n + 1)) / 2;
-  
+
   // Calculate the actual sum of the numbers in the array
   let actualSum = 0;
   for (let i = 0; i < n; i++) {
     actualSum += nums[i];
   }
-  
+
   // The difference is the missing number
   return expectedSum - actualSum;
 }
@@ -152,5 +153,3 @@ function missingNumberXOR(nums: number[]): number {
 console.log(missingNumberXOR([3, 0, 1])); // 2
 console.log(missingNumberXOR([9, 6, 4, 2, 3, 5, 7, 0, 1])); // 8
 ```
-
-This file is now ready to be added to your collection. Let me know if you need the `git` commands to commit it.
