@@ -73,3 +73,41 @@ console.log(merge([1, 2, 3, 0, 0, 0], 3, [2, 5, 6], 3)); // [1, 2, 2, 3, 5, 6]
 console.log(merge([1], 1, [], 0)); // [1]
 console.log(merge([0], 0, [1], 1)); // [1]
 ```
+
+### Approach 2: Copy and Two Pointers (Merge from Front)
+
+- **Time Complexity:** O(m + n)
+- **Space Complexity:** O(m)
+
+This approach copies the valid elements of `nums1` into a temporary array, then merges from the front:
+
+1. Copy the first `m` elements of `nums1` into `nums1Copy` to avoid overwriting
+2. Use two pointers (`p1` for `nums1Copy`, `p2` for `nums2`) starting at 0
+3. Compare elements and place the smaller one into `nums1`
+4. Continue until all elements are placed
+
+```typescript
+function merge(nums1: number[], m: number, nums2: number[], n: number) {
+  // Copy the valid elements of nums1 to avoid overwriting
+  let nums1Copy = nums1.slice(0, m);
+  let p1 = 0;          // Pointer for nums1Copy
+  let p2 = 0;          // Pointer for nums2
+
+  for (let i = 0; i < m + n; i++) {
+    // Place from nums1Copy if nums2 is exhausted or nums1Copy has smaller element
+    if (p2 >= n || (p1 < m && nums1Copy[p1] < nums2[p2])) {
+      nums1[i] = nums1Copy[p1];
+      p1++;
+    } else {
+      // Place from nums2
+      nums1[i] = nums2[p2];
+      p2++;
+    }
+  }
+  return nums1;
+}
+
+console.log(merge([1, 2, 3, 0, 0, 0], 3, [2, 5, 6], 3)); // [1, 2, 2, 3, 5, 6]
+console.log(merge([1], 1, [], 0)); // [1]
+console.log(merge([0], 0, [1], 1)); // [1]
+```
