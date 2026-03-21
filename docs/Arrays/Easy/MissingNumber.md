@@ -1,6 +1,6 @@
 # Missing Number
 
-[Problem Link](https://leetcode.com/problems/missing-number/)
+[Problem Link](https://leetcode.com/problems/missing-number/){:target="_blank" rel="noopener noreferrer"}
 
 ### Description
 
@@ -79,7 +79,7 @@ This file is now ready to be added to your collection. Let me know if you need t
 
 # Missing Number
 
-[Problem Link](https://leetcode.com/problems/missing-number/)
+[Problem Link](https://leetcode.com/problems/missing-number/){:target="_blank" rel="noopener noreferrer"}
 
 ### Description
 

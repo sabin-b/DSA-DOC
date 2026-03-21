@@ -1,6 +1,6 @@
 # Remove Duplicates from Sorted Array
 
-[Problem Link](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)
+[Problem Link](https://leetcode.com/problems/remove-duplicates-from-sorted-array/){:target="_blank" rel="noopener noreferrer"}
 
 ### Description
 

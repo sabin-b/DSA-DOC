@@ -1,6 +1,6 @@
 # Split a String in Balanced Strings
 
-[Problem Link](https://leetcode.com/problems/split-a-string-in-balanced-strings/description/)
+[Problem Link](https://leetcode.com/problems/split-a-string-in-balanced-strings/description/){:target="_blank" rel="noopener noreferrer"}
 
 ### Description
 

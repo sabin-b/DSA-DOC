@@ -1,6 +1,6 @@
 # Single Number
 
-[Problem Link](https://leetcode.com/problems/single-number/)
+[Problem Link](https://leetcode.com/problems/single-number/){:target="_blank" rel="noopener noreferrer"}
 
 ### Description
 

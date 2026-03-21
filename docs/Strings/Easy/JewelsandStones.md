@@ -1,6 +1,6 @@
 # Jewels and Stones
 
-[Problem Link](https://leetcode.com/problems/jewels-and-stones/)
+[Problem Link](https://leetcode.com/problems/jewels-and-stones/){:target="_blank" rel="noopener noreferrer"}
 
 ### Description
 

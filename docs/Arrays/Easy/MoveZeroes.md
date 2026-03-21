@@ -1,6 +1,6 @@
 # Move Zeroes
 
-[Problem Link](https://leetcode.com/problems/move-zeroes/)
+[Problem Link](https://leetcode.com/problems/move-zeroes/){:target="_blank" rel="noopener noreferrer"}
 
 ### Description
 

@@ -1,6 +1,6 @@
 # Find Words Containing Character
 
-[Problem Link](https://leetcode.com/problems/find-words-containing-character/description/)
+[Problem Link](https://leetcode.com/problems/find-words-containing-character/description/){:target="_blank" rel="noopener noreferrer"}
 
 ### Description
 

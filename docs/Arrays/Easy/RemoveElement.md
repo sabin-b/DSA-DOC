@@ -1,6 +1,6 @@
 # Remove Element
 
-[Problem Link](https://leetcode.com/problems/remove-element/description/)
+[Problem Link](https://leetcode.com/problems/remove-element/description/){:target="_blank" rel="noopener noreferrer"}
 
 ### Description
 

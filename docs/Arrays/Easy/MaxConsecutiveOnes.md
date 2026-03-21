@@ -1,6 +1,6 @@
 # Max Consecutive Ones
 
-[Problem Link](https://leetcode.com/problems/max-consecutive-ones/description/)
+[Problem Link](https://leetcode.com/problems/max-consecutive-ones/description/){:target="_blank" rel="noopener noreferrer"}
 
 ### Description
 

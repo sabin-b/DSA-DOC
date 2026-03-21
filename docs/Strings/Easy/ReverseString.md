@@ -1,6 +1,6 @@
 # Reverse String
 
-[Problem Link](https://leetcode.com/problems/reverse-string/description/)
+[Problem Link](https://leetcode.com/problems/reverse-string/description/){:target="_blank" rel="noopener noreferrer"}
 
 ### Description
 

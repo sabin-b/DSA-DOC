@@ -1,6 +1,6 @@
 # Find Most Frequent Vowel and Consonant
 
-[Problem Link](https://leetcode.com/problems/find-most-frequent-vowel-and-consonant/description/)
+[Problem Link](https://leetcode.com/problems/find-most-frequent-vowel-and-consonant/description/){:target="_blank" rel="noopener noreferrer"}
 
 ### Description
 
