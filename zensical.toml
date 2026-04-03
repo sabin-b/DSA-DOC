@@ -11,18 +11,18 @@
 # The site_name is shown in the page header and the browser window title
 #
 # Read more: https://zensical.org/docs/setup/basics/#site_name
-site_name = "Documentation"
+site_name = "DSA"
 
 # The site_description is included in the HTML head and should contain a
 # meaningful description of the site content for use by search engines.
 #
 # Read more: https://zensical.org/docs/setup/basics/#site_description
-site_description = "A new project generated from the default template project."
+site_description = "Sharpen your DSA skills with concise problem breakdowns, clean code, and complexity notes."
 
 # The site_author attribute. This is used in the HTML head element.
 #
 # Read more: https://zensical.org/docs/setup/basics/#site_author
-site_author = "<your name here>"
+site_author = "Sabin.B"
 
 # The site_url is the canonical URL for your site. When building online
 # documentation you should set this.
@@ -34,7 +34,7 @@ site_author = "<your name here>"
 #
 # Read more: https://zensical.org/docs/setup/basics/#copyright
 copyright = """
-Copyright &copy; 2026 The authors
+copyright @2026 Sabin.B
 """
 
 # Zensical supports both implicit navigation and explicitly defined navigation.
@@ -57,7 +57,8 @@ Copyright &copy; 2026 The authors
 #
 # Read more: https://zensical.org/docs/customization/#additional-css
 #
-#extra_css = ["stylesheets/extra.css"]
+# Load a small brand layer so the generated site reflects the custom logo colors.
+extra_css = ["stylesheets/extra.css"]
 
 # With the `extra_javascript` option you can add your own JavaScript to your
 # project to customize the behavior according to your needs.
@@ -93,7 +94,11 @@ Copyright &copy; 2026 The authors
 # - https://zensical.org/docs/setup/logo-and-icons/#favicon
 # - https://developer.mozilla.org/en-US/docs/Glossary/Favicon
 #
-#favicon = "images/favicon.png"
+# Use source-owned brand assets so the site header and browser tab stay in sync.
+logo = "images/dsa-logo.svg"
+
+# Use a project-owned favicon so the browser tab matches the DSA branding.
+favicon = "images/dsa-favicon.svg"
 
 # Zensical supports more than 60 different languages. This means that the
 # labels and tooltips that Zensical's templates produce are translated.
@@ -293,8 +298,6 @@ toggle.name = "Switch to light mode"
 # - https://zensical.org/docs/setup/logo-and-icons
 # - https://zensical.org/docs/authoring/icons-emojis/#search
 # ----------------------------------------------------------------------------
-#[project.theme]
-logo = "images/dsa-logo.svg"
 #repo = "lucide/smile"
 
 # ----------------------------------------------------------------------------

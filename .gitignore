@@ -1,4 +1,5 @@
 /cache
 /static
 /.vscode
+/node_modules
 /site*

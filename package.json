@@ -1,0 +1,11 @@
+{
+  "name": "dsa-doc",
+  "private": true,
+  "scripts": {
+    "build:docs": "python -m zensical build --clean",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "husky": "9.1.7"
+  }
+}

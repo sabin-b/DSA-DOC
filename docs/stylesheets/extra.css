@@ -1,0 +1,92 @@
+/* Brand tokens keep the visual polish consistent across light and dark modes. */
+:root {
+  --dsa-brand-cyan: #33d1c6;
+  --dsa-brand-blue: #4f8cff;
+  --dsa-brand-amber: #ffd166;
+  --dsa-brand-ink: #08111f;
+}
+
+/* Light mode gets a bright glass-like header that picks up the logo palette. */
+[data-md-color-scheme="default"] {
+  --dsa-header-bg: linear-gradient(135deg, #f6fffe 0%, #edf4ff 55%, #fff8ec 100%);
+  --dsa-header-border: rgba(79, 140, 255, 0.18);
+  --dsa-surface: rgba(255, 255, 255, 0.82);
+  --dsa-shadow: 0 16px 40px rgba(8, 17, 31, 0.08);
+}
+
+/* Dark mode keeps the same identity with stronger contrast and deeper surfaces. */
+[data-md-color-scheme="slate"] {
+  --dsa-header-bg: linear-gradient(135deg, #08111f 0%, #13243a 58%, #1c2b49 100%);
+  --dsa-header-border: rgba(121, 240, 211, 0.18);
+  --dsa-surface: rgba(11, 22, 38, 0.72);
+  --dsa-shadow: 0 18px 42px rgba(0, 0, 0, 0.28);
+}
+
+/* The fixed header carries most of the new branding, so keep it bold but readable. */
+.md-header {
+  background: var(--dsa-header-bg);
+  border-bottom: 1px solid var(--dsa-header-border);
+  box-shadow: var(--dsa-shadow);
+  backdrop-filter: blur(12px);
+}
+
+/* The logo gets a framed badge so the SVG feels intentional instead of floating. */
+.md-header__button.md-logo,
+.md-nav__button.md-logo {
+  background: linear-gradient(135deg, rgba(51, 209, 198, 0.14), rgba(79, 140, 255, 0.14));
+  border: 1px solid rgba(79, 140, 255, 0.18);
+  border-radius: 1rem;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  padding: 0.22rem;
+}
+
+/* A slightly larger logo helps the new mark read more clearly in the header. */
+.md-header__button.md-logo img,
+.md-nav__button.md-logo img {
+  height: 2rem;
+  width: 2rem;
+}
+
+/* The search box is a high-traffic element, so give it the same branded surface treatment. */
+.md-search__form {
+  background: var(--dsa-surface);
+  border: 1px solid rgba(79, 140, 255, 0.14);
+  border-radius: 999px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+/* Active navigation and links should echo the logo colors for faster recognition. */
+.md-nav__link--active,
+.md-typeset a,
+.md-search-result__link:hover {
+  color: var(--dsa-brand-blue);
+}
+
+/* The top button becomes a small accent chip instead of a plain circular control. */
+.md-top {
+  background: linear-gradient(135deg, var(--dsa-brand-cyan), var(--dsa-brand-blue));
+  border-radius: 999px;
+  box-shadow: 0 12px 24px rgba(30, 84, 173, 0.28);
+  color: white;
+}
+
+/* Code and content areas keep the existing layout but gain cleaner card separation. */
+.md-typeset pre > code,
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 1rem;
+}
+
+/* Mobile spacing stays compact so the header polish doesn't crowd smaller screens. */
+@media screen and (max-width: 76.2344em) {
+  .md-header__button.md-logo,
+  .md-nav__button.md-logo {
+    padding: 0.18rem;
+  }
+
+  .md-header__button.md-logo img,
+  .md-nav__button.md-logo img {
+    height: 1.8rem;
+    width: 1.8rem;
+  }
+}

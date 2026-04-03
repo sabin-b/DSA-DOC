@@ -1,0 +1,2 @@
+# Validate the generated docs before every commit so broken config stays local.
+npm run build:docs

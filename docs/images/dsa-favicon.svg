@@ -1,0 +1,40 @@
+<!-- Simplified favicon version of the DSA mark for sharp rendering at small sizes. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="DSA favicon">
+  <defs>
+    <!-- Dark base keeps the favicon readable in light and dark browser chrome. -->
+    <linearGradient id="bg" x1="10" y1="8" x2="54" y2="56" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#08111f" />
+      <stop offset="1" stop-color="#14263d" />
+    </linearGradient>
+
+    <!-- Shared accent gradient keeps the favicon visually tied to the logo. -->
+    <linearGradient id="stroke" x1="14" y1="14" x2="50" y2="50" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#33d1c6" />
+      <stop offset="1" stop-color="#4f8cff" />
+    </linearGradient>
+
+    <!-- Warm center makes the favicon recognizable at a glance. -->
+    <linearGradient id="core" x1="28" y1="22" x2="37" y2="40" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffd166" />
+      <stop offset="1" stop-color="#ff8a3d" />
+    </linearGradient>
+  </defs>
+
+  <!-- Rounded square mirrors the main logo silhouette for brand consistency. -->
+  <rect x="6" y="6" width="52" height="52" rx="16" fill="url(#bg)" />
+
+  <!-- Cross-links suggest graph connections without overloading the small canvas. -->
+  <path d="M18 20 L28 28" fill="none" stroke="url(#stroke)" stroke-width="4" stroke-linecap="round" />
+  <path d="M46 20 L36 28" fill="none" stroke="url(#stroke)" stroke-width="4" stroke-linecap="round" />
+  <path d="M20 44 L29 36" fill="none" stroke="url(#stroke)" stroke-width="4" stroke-linecap="round" />
+  <path d="M44 44 L35 36" fill="none" stroke="url(#stroke)" stroke-width="4" stroke-linecap="round" />
+
+  <!-- The center node stays bold so the mark survives browser downscaling. -->
+  <rect x="25" y="25" width="14" height="14" rx="4" transform="rotate(45 32 32)" fill="url(#core)" />
+
+  <!-- Outer nodes complete the graph motif and improve silhouette recognition. -->
+  <circle cx="17" cy="19" r="4.5" fill="#33d1c6" />
+  <circle cx="47" cy="19" r="4.5" fill="#4f8cff" />
+  <circle cx="19" cy="46" r="4.5" fill="#79f0d3" />
+  <circle cx="45" cy="45" r="4.5" fill="#9ab6ff" />
+</svg>

@@ -1,0 +1,46 @@
+<!-- Brand mark for the DSA docs header: structured nodes + a focused center core. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="DSA logo">
+  <defs>
+    <!-- Deep slate background to keep contrast high in both theme modes. -->
+    <linearGradient id="bg" x1="8" y1="6" x2="56" y2="58" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#08111f" />
+      <stop offset="1" stop-color="#13243a" />
+    </linearGradient>
+
+    <!-- Cool accent stroke to suggest connected data paths. -->
+    <linearGradient id="stroke" x1="10" y1="12" x2="54" y2="52" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#33d1c6" />
+      <stop offset="1" stop-color="#4f8cff" />
+    </linearGradient>
+
+    <!-- Warm center highlight to create a memorable focal point. -->
+    <linearGradient id="core" x1="26" y1="20" x2="38" y2="42" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffd166" />
+      <stop offset="1" stop-color="#ff8a3d" />
+    </linearGradient>
+  </defs>
+
+  <!-- Rounded tile keeps the mark crisp in tight header and sidebar spaces. -->
+  <rect x="4" y="4" width="56" height="56" rx="18" fill="url(#bg)" />
+
+  <!-- Soft inset line adds depth without making the icon visually noisy. -->
+  <rect x="5.5" y="5.5" width="53" height="53" rx="16.5" fill="none" stroke="rgba(255,255,255,0.08)" />
+
+  <!-- Connecting paths represent linked structures and traversal flow. -->
+  <path d="M17 20 L28 28" fill="none" stroke="url(#stroke)" stroke-width="3.5" stroke-linecap="round" />
+  <path d="M47 18 L36 28" fill="none" stroke="url(#stroke)" stroke-width="3.5" stroke-linecap="round" />
+  <path d="M20 46 L29 37" fill="none" stroke="url(#stroke)" stroke-width="3.5" stroke-linecap="round" />
+  <path d="M44 44 L35 36" fill="none" stroke="url(#stroke)" stroke-width="3.5" stroke-linecap="round" />
+
+  <!-- Central diamond acts as the stable "algorithm core" of the mark. -->
+  <rect x="25" y="25" width="14" height="14" rx="4" transform="rotate(45 32 32)" fill="url(#core)" />
+
+  <!-- Outer nodes keep the icon legible even at favicon-scale sizes. -->
+  <circle cx="16" cy="19" r="4" fill="#33d1c6" />
+  <circle cx="48" cy="17" r="4" fill="#4f8cff" />
+  <circle cx="19" cy="47" r="4" fill="#79f0d3" />
+  <circle cx="45" cy="45" r="4" fill="#9ab6ff" />
+
+  <!-- A small spark gives the otherwise technical mark a polished finish. -->
+  <path d="M44 27 L45.4 23.8 L48.6 22.4 L45.4 21 L44 17.8 L42.6 21 L39.4 22.4 L42.6 23.8 Z" fill="#ffd166" />
+</svg>
