@@ -23,7 +23,7 @@ Given an array `nums` of `n` integers where `nums` contains all integers in the 
     Output: [6]
     Explanation: n = 8 since array has 8 elements. Range is [1,8]. Number 6 is missing.
 
-### Approach: Negative Marking
+### Approach 1: Negative Marking
 
 - **Time Complexity:** O(n)
 - **Space Complexity:** O(1)
@@ -65,3 +65,39 @@ console.log(findDisappearedNumbers([4, 3, 2, 7, 8, 2, 1, 5])); // [6]
 | 1 | Use array indices as hash keys |
 | 2 | Negate values to mark presence |
 | 3 | Collect indices with positive values |
+
+### Approach 2: Cyclic Sort
+
+- **Time Complexity:** O(n)
+- **Space Complexity:** O(1)
+
+Place each number in its correct index position (value - 1). After sorting, iterate and find positions where the number doesn't match the index + 1.
+
+```typescript
+function findDisappearedNumbers(nums: number[]): number[] {
+  let i = 0;
+  while (i < nums.length) {
+    let correctIdx = nums[i] - 1;
+    if (nums[i] !== nums[correctIdx] && correctIdx >= 0) {
+      [nums[i], nums[correctIdx]] = [nums[correctIdx], nums[i]];
+    } else {
+      i++;
+    }
+  }
+
+  const result: number[] = [];
+  for (let j = 0; j < nums.length; j++) {
+    if (nums[j] !== j + 1) result.push(j + 1);
+  }
+  return result;
+}
+
+console.log(findDisappearedNumbers([4, 3, 2, 1, 6, 7])); // [5]
+console.log(findDisappearedNumbers([1, 1]));              // [2]
+console.log(findDisappearedNumbers([4, 3, 2, 7, 8, 2, 1, 5])); // [6]
+```
+
+| Approach | Time | Space |
+|----------|------|-------|
+| Negative Marking | O(n) | O(1) |
+| Cyclic Sort | O(n) | O(1) |
