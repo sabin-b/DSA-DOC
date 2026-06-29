@@ -1,19 +1,46 @@
-prompt:
+# DSA-DOC
 
-## documentation
-"Please create a new file for this  problem under docs/Arrays/Easy. Here is the solution code and complexity analysis..."
+A structured documentation site for Data Structures & Algorithms problems, built with [Zensical](https://github.com/anomalyco/zensical) — a static site generator for MkDocs.
 
-## local workflow
-1 - `python -m zensical build --clean`
-2 - open the generated output from `site/`
-3 - use `npm install` once if you want the Husky pre-commit hook locally
+## Intent
 
-## husky
-1 - Husky runs `npm run build:docs` before each commit
-2 - if the build fails, fix the docs/config issue and commit again
+This repo serves as a personal reference for DSA problem-solving patterns. Each problem includes:
 
+- Problem description with test cases
+- Multiple approaches with time & space complexity
+- TypeScript implementations
+- Pattern classification (e.g. Hash Map, Two Pointers, Recursion)
 
-## github
-1 - git add .
-2 - git commit -m "suitable message" (e.g. "Add Two Sum solution") based on the problem description
-3 - git push
+## Structure
+
+Problems are organized by **topic** and **difficulty**:
+
+```
+docs/
+├── Arrays/Easy/          (16 problems)
+├── LinkedList/
+│   ├── Easy/             (8 problems)
+│   └── Medium/           (3 problems)
+├── Recursion/
+│   ├── Easy/             (6 problems)
+│   └── Medium/           (1 problem)
+├── Search/Easy/          (2 problems)
+├── Sorting/easy/         (2 problems)
+└── Strings/Easy/         (6 problems)
+```
+
+## Usage
+
+```sh
+# Build the site
+python -m zensical build --clean
+
+# Open generated output
+open site/index.html
+```
+
+## Tech Stack
+
+- **SSG:** Zensical (Python)
+- **Language:** TypeScript
+- **Pre-commit:** Husky → `npm run build:docs`
