@@ -17,19 +17,19 @@ In other words, the array must strictly increase to a peak, then strictly decrea
 !!! example "Test Cases"
 
     **Example 1:**
-    Input: arr = [2, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+    Input: arr = [2, 1]
     Output: false
-    Explanation: The array increases but never decreases after reaching the peak.
+    Explanation: The array has fewer than 3 elements, so it cannot be a valid mountain.
 
     **Example 2:**
-    Input: arr = [2, 1, 0, -1]
-    Output: true
-    Explanation: The array increases from 2 to 1, then decreases to -1, forming a valid mountain.
+    Input: arr = [3, 5, 5]
+    Output: false
+    Explanation: The array has a plateau (equal adjacent elements) instead of strictly increasing to the peak.
 
     **Example 3:**
-    Input: arr = [5, 4, 3]
-    Output: false
-    Explanation: The array only decreases, never increases to form a valid mountain.
+    Input: arr = [0, 3, 2, 1]
+    Output: true
+    Explanation: The array strictly increases from 0 to 3 (peak), then strictly decreases from 3 to 1.
 
 ### Approach 1: Two-Pass Scan
 
@@ -70,7 +70,7 @@ function validMountainArray(arr: number[]): boolean {
   return index === n - 1;
 }
 
-console.log(validMountainArray([2, 1, 2, 3, 4, 5, 6, 7, 8, 9])); // false
-console.log(validMountainArray([2, 1, 0, -1])); // true
-console.log(validMountainArray([5, 4, 3])); // false
+console.log(validMountainArray([2, 1])); // false
+console.log(validMountainArray([3, 5, 5])); // false
+console.log(validMountainArray([0, 3, 2, 1])); // true
 ```
