@@ -44,3 +44,6 @@ open site/index.html
 - **SSG:** Zensical (Python)
 - **Language:** TypeScript
 - **Pre-commit:** Husky → `npm run build:docs`
+
+
+opencode -s ses_078838e3fffe2tKFmF7gSB0d5v
