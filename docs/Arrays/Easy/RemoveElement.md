@@ -25,7 +25,32 @@ Consider the number of elements in `nums` which are not equal to `val` be `k`. T
     Explanation: Your function should return k = 5, with the first five elements of nums containing 0, 0, 1, 3, and 4. Note that the order of the five elements can be arbitrary.
     It does not matter what you leave beyond the returned k (hence they are underscores).
 
-### Approach 1: Two Pointers
+### Approach 1: Brute Force
+
+- **Time Complexity:** O(n)
+- **Space Complexity:** O(n)
+
+This approach uses extra space by creating a temporary array `res` to store elements not equal to `val`. After collecting all such elements, we copy them back into the original array `nums`.
+
+```typescript
+function removeElement(nums: number[], val: number): number {
+  let n = nums.length;
+  let res: number[] = [];
+  for (let i = 0; i < n; i++) {
+    if (nums[i] !== val) {
+      res.push(nums[i]);
+    }
+  }
+
+  for (let j = 0; j < res.length; j++) {
+    nums[j] = res[j];
+  }
+
+  return res.length;
+}
+```
+
+### Approach 2: Two Pointers (Optimal)
 
 - **Time Complexity:** O(n)
 - **Space Complexity:** O(1)
@@ -36,12 +61,12 @@ When `nums[i]` is not the value to be removed, we place it at the `writeIndex` p
 
 ```typescript
 function removeElement(nums: number[], val: number): number {
+  let n = nums.length;
   let writeIndex = 0;
-  for (let i = 0; i < nums.length; i++) {
-    // If the current element is not the value to be removed
+  for (let i = 0; i < n; i++) {
     if (nums[i] !== val) {
-      // Copy it to the writeIndex position and increment writeIndex
-      nums[writeIndex++] = nums[i];
+      nums[writeIndex] = nums[i];
+      writeIndex++;
     }
   }
   return writeIndex;
