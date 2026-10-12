@@ -73,6 +73,26 @@ function getIntersectionNode(
 }
 ```
 
+### Approach 3: Two Pointers (Explicit Null Check)
+
+- **Time Complexity:** O(m + n)
+- **Space Complexity:** O(1)
+
+Same switch-heads idea as Approach 2, written with explicit `=== null` checks.
+
+```typescript
+function getIntersectionNode(headA: ListNode | null, headB: ListNode | null): ListNode | null {
+    let a = headA;
+    let b = headB;
+
+    while (a !== b) {
+        a = a === null ? headB : a.next;
+        b = b === null ? headA : b.next;
+    }
+    return a;
+}
+```
+
 ### Definition for singly-linked list:
 
 ```typescript
